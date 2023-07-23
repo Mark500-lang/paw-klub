@@ -3,10 +3,11 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Outlet } from "react-router-dom";
+import "./Common.css";
 
 function Common(){
     return(
-        <div>
+        <div id="common">
             <Header/>
             <Navbar/>
             <Outlet/>

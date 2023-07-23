@@ -1,7 +1,8 @@
 import React,{ useState, useEffect } from "react";
 import useScrollListener from "./hooks/useScrollListener";
 import { NavLink } from "react-router-dom";
-import { List } from "react-bootstrap-icons";
+import { LuListMinus } from "react-icons/lu";
+// import { List } from "react-bootstrap-icons";
 // import { VscListSelection } from "react-icons/bs";
 import './Navbar.css';
 
@@ -14,7 +15,7 @@ function Navbar(){
     useEffect(() => {
     const _classList = [];
 
-    if (scroll.y > 30 && scroll.y - scroll.lastY > 0)
+    if (scroll.y > 130 && scroll.y - scroll.lastY > 0)
       _classList.push("nav-bar--hidden");
 
     setNavClassList(_classList);
@@ -22,45 +23,45 @@ function Navbar(){
 
     return(
         <nav className={navClassList.join(" ")} href="#">
-                <List className="hamburger"
+                <LuListMinus className="hamburger"
                     onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
                     }}
                 />
-                <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
+                <div className={isNavExpanded ? "nav-menus expanded" : "nav-menus"}>
                     <ul>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/'> 
+                            <NavLink className="nav-linker" to='/' activeclassname='active'> 
                                 Home
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/services'> 
-                                Services
+                            <NavLink className="nav-linker" to='/daycare' activeclassname='active'> 
+                                Daycare
+                            </NavLink>
+                        </li>
+
+                        <li className="nav-item">
+                            <NavLink className="nav-linker" to='/grooming' activeclassname='active'> 
+                                Grooming
                             </NavLink> 
                             
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/Adoption'> 
-                                Adoption
+                            <NavLink className="nav-linker" to='/training' activeclassname='active'> 
+                                Adoption&Training
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/training'> 
-                                Training
-                            </NavLink>
-                        </li>
-
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to='/contact'>
+                            <NavLink className="nav-linker" to='/contact' activeclassname='active'>
                                 Contact Us
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to='/more'>
+                            <NavLink className="nav-linker" to='/more' activeclassname='active'>
                                 More...
                             </NavLink>
                         </li>

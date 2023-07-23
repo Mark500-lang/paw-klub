@@ -1,3 +1,71 @@
 .home{
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.home .container{
+    margin-top: 4rem;
+    padding: 0;
+}
+.hero{
+    background-color: #f5efed;
+}
+#home-img{
+    width: 100%;
+}
+#safe-home .keep{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.705);
+    margin: 2rem 0  0 2rem;
+}
+#safe-home .reliable{
+    font-size: 50px;
+    margin: 4rem 0  0 2rem;
+}
+#contact-us-today-btn{
+    position: relative;
+    margin: 15% 0  0 2rem;
+}
+#contact-us-today-btn button{
+    height: 3rem;
+    width: 13rem;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff0000ea;
+    border: none;
+    transition: all .3s;
+    box-shadow: 4px 4px 15px #ff0000a1;
+}
+#check-circle-icon{
+    font-size: 22px;
+}
+#contact-us-today-btn button:hover{
+    box-shadow: 10px 10px 10px #ff0000a1;
+}
+.container .col-sm-6{
+    height: 8rem;
+}
+.card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    box-shadow: 5px 10px 8px #000000ab;
+}
+.card-text{
+    z-index: 1;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.card-color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
