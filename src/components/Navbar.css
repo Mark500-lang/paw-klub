@@ -5,8 +5,9 @@ nav {
     top: 0;
     height: 4em;
     width: 100%;
-    background-color: #f5efedef;
+    background-color: #f5efed;
     transition: all .5s ease-in-out;
+    z-index: 2;
   }
   nav.nav-bar--hidden {
     transform: translateY(-100%);
@@ -21,6 +22,7 @@ nav {
   .nav-menus li {
     list-style-type: none;
     margin: 0 1rem;
+    
   }
   .nav-menus li a {
     text-decoration: none;
@@ -42,6 +44,33 @@ nav {
   .active{
     color: #ff0000;
     border-bottom: 1px solid #ff0000;
+  }
+  .subnav{
+    display:flex;
+    flex-direction: row;
+  }
+  .subnav-content {
+    display: none;
+    position: absolute;
+    margin: 0 32vw;
+    padding-top: 0;
+    left: 0;
+    background-color: #f5efed;
+    height: fit-content;
+    width: fit-content;
+    z-index: 2;
+  }
+  .subnav-content .nav-linker {
+    margin: 1.5rem 1.5rem;
+    float: left;
+    width: fit-content;
+    color: #ff0000;
+  }
+  .subnav-content .nav-linker:hover {
+    color: black;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
   }
   .hamburger {
     border: 0;
@@ -85,7 +114,6 @@ nav {
       text-align: center;
       margin: 0;
     }
-  
     .nav-menus li a {
       color: black;
       width: 100%;
@@ -97,5 +125,26 @@ nav {
     .nav-menus.expanded ul {
       display: block;
       transition: all .3s;
+    }
+    .subnav .subnav-content {
+      display: block;
+    }
+    .subnav-content {
+      display: none;
+      position: absolute;
+      margin: 0 0 0 65vw;
+      top: 32%;
+      left: 0;
+      background-color: #f5efed;
+      height: fit-content;
+      width: fit-content;
+      z-index: 2;
+      transition: all .5s ease-in-out;
+    }
+    .subnav-content .nav-linker {
+      margin: 0 1rem;
+      float: left;
+      width: fit-content;
+      color: #ff0000;
     }
   }

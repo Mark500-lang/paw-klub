@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from "react";
 import useScrollListener from "./hooks/useScrollListener";
 import { NavLink } from "react-router-dom";
 import { LuListMinus } from "react-icons/lu";
+import { IoMdArrowDropdown } from "react-icons/io";
 // import { List } from "react-bootstrap-icons";
 // import { VscListSelection } from "react-icons/bs";
 import './Navbar.css';
@@ -37,21 +38,35 @@ function Navbar(){
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-linker" to='/daycare' activeclassname='active'> 
-                                Daycare
+                            <NavLink className="nav-linker" to='/about' activeclassname='active'> 
+                                About
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-linker" to='/grooming' activeclassname='active'> 
-                                Grooming
+                            <NavLink className="nav-linker subnav" to='/daycare' activeclassname='active'> 
+                                Services<IoMdArrowDropdown/>
+                                <div class="subnav-content">
+                                    <NavLink className="nav-linker" to='/daycare' activeclassname='active'>
+                                        Daycare
+                                    </NavLink>
+                                    <NavLink className="nav-linker" to='/grooming' activeclassname='active'>
+                                        Grooming
+                                    </NavLink>
+                                    <NavLink className="nav-linker" to='/adoption' activeclassname='active'>
+                                        Adoption
+                                    </NavLink>
+                                    <NavLink className="nav-linker" to='/training' activeclassname='active'>
+                                        Training
+                                    </NavLink>
+                                </div>
                             </NavLink> 
                             
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className="nav-linker" to='/training' activeclassname='active'> 
-                                Adoption&Training
+                            <NavLink className="nav-linker" to='/our-team' activeclassname='active'> 
+                                Our Team
                             </NavLink>
                         </li>
 

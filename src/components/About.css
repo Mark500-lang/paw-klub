@@ -1,0 +1,115 @@
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about-container{
+    margin: 5rem 0 5rem 0;
+    background-color: #f5efed;
+}
+.about-container .about-col{
+    padding: 0;
+}
+#about-img{
+    width: 100%;
+}
+.about-container .about-text{
+    margin: 0 3rem 0 4rem;
+}
+.about-facts{
+    margin: 15% 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+.about-facts-col{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+}
+.facts-heading1{
+    background-color: #ff0000;
+    width: 120px;
+    height: 120px;
+    border-radius: 45% 55% 52% 48% / 26% 52% 48% 74%;
+    display: flex;
+}
+.facts-heading2{
+    background-color: #ff0000;
+    width: 120px;
+    height: 120px;
+    border-radius: 75% 25% 61% 39% / 42% 31% 69% 58%;
+    display: flex;
+}
+.facts-heading3{
+    background-color: #ff0000;
+    width: 120px;
+    height: 120px;
+    border-radius: 19% 81% 78% 22% / 51% 50% 50% 49%;
+    display: flex;
+}
+.about-facts .icons{
+    font-size: 50px;
+    position: relative;
+    margin: auto;
+}
+.facts-all-text{
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+.facts-no{
+    font-size: 65px;
+    font-weight: bold;
+}
+.facts-text{
+    font-size: 17px;
+    padding-left: 10px;
+}
+.about-facts-repeat{
+    display: none;
+}
+@media screen and (max-width: 1202px){
+    .about-facts{
+        display: none;
+    }
+    .about-facts-repeat{
+        display: flex;
+        margin: auto; 
+    }
+    .about-facts-repeat .about-facts-col{
+        padding: 1rem 2rem;
+        margin: auto;
+        width: 100%;
+    }
+    .about-facts-repeat .icons{
+        font-size: 50px;
+        position: relative;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 800px){
+    .about-text{
+        padding-bottom: 2rem;
+    }
+    .about-facts-repeat{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-facts-repeat .about-facts-col{
+        padding: 1rem 2rem;
+        margin: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 3rem 0;
+        background-color: #f5efed;
+    }
+    #about-img{
+        width: 100%;
+        padding:0 2rem;
+    }
+}

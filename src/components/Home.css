@@ -3,11 +3,11 @@
     flex-direction: column;
 }
 .home .container{
-    margin-top: 4rem;
     padding: 0;
 }
 .hero{
-    background-color: #f5efed;
+    margin-top: 5rem;
+    background-color: #f5efed;  
 }
 #home-img{
     width: 100%;
@@ -40,25 +40,36 @@
     font-size: 22px;
 }
 #contact-us-today-btn button:hover{
-    box-shadow: 10px 10px 10px #ff0000a1;
+    box-shadow: 10px 10px 10px #ff0000a6;
 }
 .container .col-sm-6{
     height: 8rem;
 }
-.card{
+.services-cards{
+    margin-top: 6rem;
+}
+.container .card-row{
+    margin-bottom: 15rem;
+}
+.cards{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
-    box-shadow: 5px 10px 8px #000000ab;
+    box-shadow: 5px 5px 5px #000000ab;
+    height: 20rem;
+    width: 30rem;
+    transition: all .3s;
 }
+
 .card-text{
     z-index: 1;
     margin: auto;
     font-weight: bold;
-    font-size: 30px;
+    /* font-size: 10px; */
     color: white;
+    transition: all .4s;
 }
 .card-color-overlay{
     position: absolute;
@@ -67,5 +78,15 @@
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
+    transition: all .3s;
+}
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 12px 15px 15px #000000ab;
+}
+.cards:hover .card-text{
+    color: #ff0000;
+}
+.cards:hover .card-color-overlay{
+    background-color: #000000d7;
 }
