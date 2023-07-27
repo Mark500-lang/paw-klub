@@ -3,6 +3,7 @@ import "./About.css"
 import { BsPeopleFill } from "react-icons/bs";
 import { GiDogHouse } from "react-icons/gi";
 import { GiSittingDog } from "react-icons/gi";
+import Faqs from "./Faqs";
 
 function About(){
     return(
@@ -82,6 +83,10 @@ function About(){
                                 </span> 
                             </div>
                         </div>
+                        <div className="about-faqs">
+                            <Faqs/>
+                        </div>
+                        
         </div>
     )
 }

@@ -7,7 +7,8 @@ import Daycare from "./components/services/Daycare";
 import Contact from './components/Contact';
 import Grooming from "./components/services/Grooming";
 import Adoption from "./components/services/Adoption";
-import Training from "./components/services/Training";
+// import Training from "./components/services/Training";
+import Faqs from './components/Faqs';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="/daycare" element={<Daycare/>}/>
           <Route path="/grooming" element={<Grooming/>}/>
           <Route path="/adoption" element={<Adoption/>}/>
-          <Route path="/training" element={<Training/>}/>
+          {/* <Route path="/training" element={<Training/>}/> */}
+          <Route path="/training" element={<Faqs/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Route>
       </Routes>

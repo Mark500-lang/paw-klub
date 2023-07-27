@@ -35,6 +35,7 @@
     border: none;
     transition: all .3s;
     box-shadow: 4px 4px 15px #ff0000a1;
+    margin-bottom: 4rem;
 }
 #check-circle-icon{
     font-size: 22px;
@@ -47,6 +48,7 @@
 }
 .services-cards{
     margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 .container .card-row{
     margin-bottom: 15rem;
@@ -67,7 +69,6 @@
     z-index: 1;
     margin: auto;
     font-weight: bold;
-    /* font-size: 10px; */
     color: white;
     transition: all .4s;
 }
@@ -89,4 +90,79 @@
 }
 .cards:hover .card-color-overlay{
     background-color: #000000d7;
+}
+
+/* Testimonials box */
+.testimonials{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding-bottom: 2rem;
+}
+.testimonials-title {
+    margin: 3rem auto 0;
+    max-width: 50rem;
+    text-align: center;
+}
+.all-testimonials {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+    width: 100%;
+}
+.testimonial-card {
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
+    padding: 3rem;
+    position: relative;
+    width: 54rem;
+}
+.testimonial-card span{
+    align-items: center;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.testimonial-card img{
+    width: 100px;
+    border-radius: 50%;
+}
+.testimonial-card h6{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.qoute-icon{
+    font-size: 50px;
+    float:right;
+    color: #ff0000;
+}
+.testimonial-card p{
+    padding-top: 3rem;
+    padding-right: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+@media screen  and (max-width: 1000px){
+    .all-testimonials{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .testimonial-card {
+        background-color: #fff;
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
+        padding: 2rem;
+        position: relative;
+        max-width: 30rem;
+        margin: auto;
+    } 
+}
+@media screen  and (max-width: 600px){
+    .testimonial-card {
+        width: 85%;
+    }
 }

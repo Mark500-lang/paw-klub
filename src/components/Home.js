@@ -1,6 +1,9 @@
 import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 import './Home.css'
+import Faqs from "./Faqs";
+
 function Home(){
     return(
         <div className="home">
@@ -63,6 +66,37 @@ function Home(){
                     </div>       
                 </div>
             </div>
+
+
+            <div className="testimonials" >
+                <div className="container">
+                    <div className="testimonials-title">
+                        <h4>Reviewed by people</h4>
+                        <h1>Client Testimonials</h1>
+                        <p className="text-muted">Discover the impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their experiences with you.</p>
+                    </div>
+                    <div className="all-testimonials">
+                        <div className="testimonial-card">
+                            <span>
+                                <img src="./assets/keith.png" alt="..."></img>
+                                <h6>Keith Timon</h6>   
+                            </span>
+                            <BiSolidQuoteAltRight className="qoute-icon"/>
+                            <p>"From the moment I stepped into their facility, it was evident that it is more than just a dog care center; it's a true haven for our four-legged companions. The staff's genuine love for dogs was palpable, and it put me at ease knowing my furry family member was in caring and capable hands."</p>
+                        </div>
+
+                        <div className="testimonial-card">
+                        <span>
+                                <img src="./assets/viola.png" alt="..."></img>
+                                <h6>Diola Vasiv</h6>   
+                            </span>
+                            <BiSolidQuoteAltRight className="qoute-icon"/>
+                            <p>" As a busy professional, I sometimes struggle to find enough time to give Max the attention he deserves. However, with Paw Klub, I can leave him there knowing he'll have a blast with his canine friends and receive all the attention and affection he needs. The facility is clean, safe, and engaging, making it the perfect place for dogs to socialize and have fun."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Faqs/>
         </div>
     )
 }
