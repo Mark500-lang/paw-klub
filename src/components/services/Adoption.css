@@ -1,0 +1,98 @@
+.view-breeds{
+    padding: 4rem 0 8rem 0;
+    font-family: Poppins,sans-serif;
+}
+.view-breeds h1{
+    font-weight: bold;
+}
+.select-breed-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 47vh;
+    overflow-y: scroll;
+}
+.select-breed-box button{
+    background-color: #e9e9e9;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    transition: all .3s;
+}
+.colored-button {
+    background-color: #ff0000 !important;
+    color: white;
+}
+.dog-info{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.dog-breed-image{
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    position: relative;
+    width: 40rem;
+}
+.dog-breed-image img{
+    width: 100%;
+}
+.dog-info-table{
+    width: 15rem;
+    font-family: Poppins,sans-serif;
+}
+.dog-info-table button{
+    height: 3rem;
+    width: 13rem;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff0000ea;
+    border: none;
+    transition: all .3s;
+    box-shadow: 4px 4px 15px #ff0000a1;
+    margin: 1rem 1rem;
+}
+.dog-info-table button:hover{
+    box-shadow: 10px 10px 10px #ff0000a6;
+}
+.breed-info-table{
+    display: grid;
+    font-size: 17px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.breed-info-table .breed-info-box:first-child{
+    border-top: 2px solid #706f7b;
+}
+.breed-info-box{
+    border-bottom: 2px solid #706f7b;
+    border-left: 2px solid #706f7b;
+    border-right: 2px solid #706f7b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0.9rem 0.5rem;
+    text-align: center;
+}
+.breed-info-box span:first-child{
+    border-right: 2px solid #706f7b;
+}
+
+@media screen and (max-width: 775px){
+    .dog-info{
+        padding-top: 4rem;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .dog-breed-image{
+        width: 100%;
+    }
+}

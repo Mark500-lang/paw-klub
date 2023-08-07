@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
 import './Home.css'
@@ -9,13 +10,15 @@ function Home(){
         <div className="home">
             <div className="container hero">
                 <div className="row ">
-                    <div className="col-sm home-">
+                    <div className="col-sm">
                         <div id="safe-home">
                             <h1 className="reliable">Safe and <span className="hero-letter">reliable</span> pet boarding</h1>
                             <p className="keep">We offer varied services to keep your beloved pet dog happy, healthy and safe... We are located at our pet resort in Langata, Nairobi.</p>                         
                         </div>
                         <div id="contact-us-today-btn">
-                            <button>Contact Us Today <AiFillCheckCircle id="check-circle-icon"/></button>
+                            <Link to='contact' style={{textDecoration: 'none'}}>
+                                <button>Contact Us Today <AiFillCheckCircle id="check-circle-icon"/></button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm">
@@ -28,41 +31,42 @@ function Home(){
                 <h1 className="text-center mb-5">Our <span className="hero-letter">Services</span></h1>
 
                 <div className="row card-row">
-                    <div className="col-sm-6 d-flex justify-content-center">
-                        <div className="cards" style={{ backgroundImage: "url(/assets/dogs-walk.jpg)"}}>
+                    <div className="col-lg-6 d-flex justify-content-center">
+                        <Link to='daycare' className="cards mb-5" style={{ backgroundImage: "url(/assets/dogs-walk.jpg)", textDecoration: 'none'}}>
                             <h3 className="fs-1 text-center card-text">Doggie Daycare</h3>
 
                             <div className='card-color-overlay'>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                    
-                    <div className="col-sm-6 d-flex justify-content-center">
-                        <div className="cards" style={{ backgroundImage: "url(/assets/dog-grooming.jpg)"}}>
+
+                    <div className="col-lg-6 d-flex justify-content-center">
+                        <Link to='grooming' className="cards mb-5" style={{ backgroundImage: "url(/assets/dog-grooming.jpg)", textDecoration: 'none'}}>
                             <h3 className="fs-1 text-center card-text">Grooming</h3>
 
                             <div className='card-color-overlay'>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="row card-row">
-                    <div className="col-sm-6 d-flex justify-content-center">
-                        <div className="cards" style={{ backgroundImage: "url(/assets/winking-dog.jpg)"}}>
+                    <div className="col-lg-6 d-flex justify-content-center">
+                        <Link to='adoption' className="cards mb-5" style={{ backgroundImage: "url(/assets/winking-dog.jpg)", textDecoration: 'none'}}>
                             <h3 className="fs-1 text-center card-text">Adoption</h3>
 
                             <div className='card-color-overlay'>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                    <div className="col-sm-6 d-flex justify-content-center">
-                        <div className="cards" style={{ backgroundImage: "url(/assets/dogs-training.jpg)"}}>
+
+                    <div className="col-lg-6 d-flex justify-content-center">
+                        <Link to='training' className="cards mb-5" style={{ backgroundImage: "url(/assets/dogs-training.jpg)", textDecoration: 'none'}}>
                             <h3 className="fs-1 text-center card-text">Training</h3>
 
                             <div className='card-color-overlay'>
                             </div>
-                        </div>
+                        </Link>
                     </div>       
                 </div>
             </div>
@@ -86,7 +90,7 @@ function Home(){
                         </div>
 
                         <div className="testimonial-card">
-                        <span>
+                            <span>
                                 <img src="./assets/viola.png" alt="..."></img>
                                 <h6>Diola Vasiv</h6>   
                             </span>

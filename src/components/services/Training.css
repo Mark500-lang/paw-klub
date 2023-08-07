@@ -1,0 +1,121 @@
+.training{
+    font-family: Poppins,sans-serif;
+}
+.training-container{
+    display: flex;
+    justify-content: center;
+    background-color: #f5efed;
+    margin: 5rem auto;
+}
+.training-container .training-col{
+    padding: 0;
+}
+.training-header{
+  width: 60%;  
+  margin: auto;
+}
+.training-text{
+    padding: 0 3rem;
+    font-size: 18px;
+}
+.training-header h3{
+    font-weight: 100;
+}
+.training-header h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.training-program{
+    padding: 2rem 0 2rem 3rem;
+}
+.training-program h4{
+    font-weight: bold;
+}
+.training-program ul{
+    list-style: circle;
+}
+.training-cards-container{
+    padding: 3rem 0;
+    background-color: #f8f8f8;
+}
+.training-cards-container h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.training-cards-container .row{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem;
+    margin: 0;
+    width: 100%;
+}
+.training-card{
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.08);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.training-card h4{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 2.5rem;
+}
+.training-card p{
+    margin-top: 0;
+    padding: 0 1rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+.book-training{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 4rem;
+    padding-bottom: 4rem;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+}
+.book-training span a{
+    font-weight: bold;
+    color: black;
+}
+.book-training span:hover a{
+    color: #ff0000;
+}
+@media screen and (max-width: 575px){
+    .training-container{
+        margin: 0 auto;
+    }
+    .training-header{
+        width: 100%;  
+        margin: auto;
+    }
+    .training-text{
+        padding: 0 1rem;
+    }
+    .training-program{
+        padding: 2rem 0 2rem 1rem;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .training-cards-container .row{
+        padding: 0.5rem;
+    }
+    .training-card h4{
+        font-size: 23px;
+        font-weight: 600;
+        padding: 0 2.5rem;
+    }
+    .training-card p{
+        margin-top: 0;
+        padding: 0 0.5rem;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}

@@ -10,13 +10,21 @@ function About(){
         <div className="about">
             <div className="container about-container">
                 <div className="row ">
-                    <div className="col-sm-4 about-col">
-                        <img id="about-img" src="./assets/about.jpg" alt=""></img>
+                    <div className="col-lg-4 about-col">
+                        <img id="about-img" src="./assets/about.jpg" alt="..."></img>
                     </div>
-                    <div className="col-sm-8">
+                    <div className="col-lg-8">
                         <h1 className="text-center mt-5">About Company</h1>
-                        <p className="about-text text-muted mt-4">Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended.</p>
-
+                        <p className="about-text text-muted mt-4">Welcome to Paws Klub, where we believe that every pet deserves to be treated with love, care, and respect. 
+                            We are a leading provider of comprehensive dog care services, including training, grooming, and dog daycare, 
+                            all under one roof. At Paws Klub, we have created a haven for our four-legged friends, offering a safe and nurturing 
+                            environment that prioritizes their well-being and happiness.
+                        </p>
+                        <p className="about-text text-muted">Paws Klub was born out of a genuine love and passion for dogs. Our founder, Milton Oboke, 
+                            a dedicated dog enthusiast, envisioned a place where dogs could receive the highest level of care while fostering positive 
+                            relationships with their owners. As a team of experienced and compassionate dog lovers, we are committed to making a positive difference 
+                            in the lives of both dogs and their human companions.
+                        </p>
                         <div className="about-facts">
                             <div className="about-facts-col">
                                 <div  className="text-center facts-heading1">
@@ -34,7 +42,7 @@ function About(){
                                 </div>
                                 <span className="facts-all-text">
                                     <h2 className="facts-no">1</h2>
-                                    <p className="text-muted facts-text">Acres of land for operation</p>
+                                    <p className="text-muted facts-text">Acre of land for operation</p>
                                 </span>
                             </div>
 
@@ -43,8 +51,8 @@ function About(){
                                     <GiSittingDog className="icons"/>
                                 </div>
                                 <span className="facts-all-text">
-                                    <h2 className="facts-no">15</h2>
-                                    <p className="text-muted facts-text">Dog breeds for adoptions</p>
+                                    <h2 className="facts-no">9</h2>
+                                    <p className="text-muted facts-text">Dog breeds up for adoption</p>
                                 </span> 
                             </div>
                         </div>
@@ -69,7 +77,7 @@ function About(){
                                 </div>
                                 <span className="facts-all-text">
                                     <h2 className="facts-no">1</h2>
-                                    <p className="text-muted facts-text">Acres of land for operation</p>
+                                    <p className="text-muted facts-text">Acre of land for operation</p>
                                 </span>
                             </div>
 

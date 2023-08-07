@@ -46,7 +46,7 @@ function Navbar(){
                         <li className="nav-item">
                             <NavLink className="nav-linker subnav" to='/daycare' activeclassname='active'> 
                                 Services<IoMdArrowDropdown/>
-                                <div class="subnav-content">
+                                <div className="subnav-content">
                                     <NavLink className="nav-linker" to='/daycare' activeclassname='active'>
                                         Daycare
                                     </NavLink>

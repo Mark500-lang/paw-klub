@@ -1,0 +1,108 @@
+.grooming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grooming .grooming-container{
+    background-color: #f5efed;
+    padding: 0;
+    margin: 5rem 0 5rem 0;
+}
+#grooming-img{
+    width: 100%;
+}
+.grooming-header{
+    font-size: 50px;
+    margin: 4rem 5rem  0 5rem;
+}
+.grooming-text{
+    font-size: 18px;
+    margin: 2rem 3rem  4rem 3rem;
+}
+
+.our-grooming-services{
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+.hero-groom-letter{
+    color: #8400ff;
+}
+.all-grooming-cards .row{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+}
+.grooming-card{
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.08);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grooming-card div{
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.219);
+    background-color: #8400ff;
+    width: 19rem;
+    height: 5rem;
+    display: flex;
+}
+.grooming-card h3{
+    position: relative;
+    margin: auto;
+    color: white;
+}
+.grooming-card p{
+    margin-top: 0;
+    padding: 2rem 2rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+@media screen and (max-width: 450px){
+    .grooming .grooming-container{
+        background-color: #f5efed;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .grooming-header{
+        font-size: 50px;
+        margin: 4rem 2rem  0 2rem;
+    }
+    .grooming-text{
+        font-size: 18px;
+        margin: 2rem 1.5rem  5rem 1.5rem;
+    }
+    .grooming-card div{
+        max-width: 12rem;
+        height: 5rem;
+    }
+    .grooming-card p{
+        margin-top: 0;
+        padding: 1.5rem 1rem;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+
+.book-grooming{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 8rem;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+}
+.book-grooming span a{
+    font-weight: bold;
+    color: black;
+}
+.book-grooming span:hover a{
+    color: #ff0000;
+}

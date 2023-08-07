@@ -17,9 +17,7 @@ function Daycare(){
                     </div>
                 </div>
             </div>
-            {/* <div className="blob" style={{ backgroundImage: "url(/assets/blob.svg)"}}>
-
-            </div> */}
+            
             <div className="container sub-daycare">
                 <div className="row">
                     <div className="col-sm">

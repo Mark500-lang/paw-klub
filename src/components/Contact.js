@@ -5,7 +5,7 @@ function Contact(){
         <div className="contact">
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-lg">
                         <div>
                             <h1>Contact Us</h1>
                             <h5>Title</h5>
@@ -32,7 +32,7 @@ function Contact(){
                             <p>2...</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg">
                         <form>
                             <div className="row">
                                 <div className="col-sm-6">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css"
 import { GiPawFront } from "react-icons/gi";
 
-function Logo(){
+function Header(){
     return(
         <div className="logo" style={{ backgroundImage: "url(/assets/paw-print1.jpeg)"}}>
             <h1 className="logo-text"><GiPawFront id="hero-icon"/> <span className="hero-letter">P</span>aws <span className="hero-letter">K</span>lub</h1>
@@ -13,4 +13,4 @@ function Logo(){
     )
 }
 
-export default Logo;
+export default Header;
