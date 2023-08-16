@@ -75,11 +75,6 @@ function Navbar(){
                                 Contact Us
                             </NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-linker" to='/more' activeclassname='active'>
-                                More...
-                            </NavLink>
-                        </li>
                     </ul>
                     
                 </div>
