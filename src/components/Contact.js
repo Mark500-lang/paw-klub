@@ -8,13 +8,12 @@ function Contact(){
                     <div className="col-lg">
                         <div>
                             <h1>Contact Us</h1>
-                            <h5>Title</h5>
-                            <p>text</p>
+                            <h6>Thank you for your interest. We look forward to hearing from you soon.</h6>
                         </div>
                         <div>
                             <legend>Phone</legend>
-                            <p>1....</p>
-                            <p>2...</p>
+                            <p>+254743808069</p>
+                            <p>+254712345678</p>
                         </div>
                         <div>
                             <legend>Hours of operation</legend>
@@ -23,13 +22,12 @@ function Contact(){
                         </div>
                         <div>
                             <legend>Address</legend>
-                            <p>1....</p>
-                            <p>2...</p>
+                            <p>70321-103 Langata, Nairobi</p>
                         </div>
                         <div>
                             <legend>Service Areas</legend>
-                            <p>1....</p>
-                            <p>2...</p>
+                            <p>area 1</p>
+                            <p>area 2</p>
                         </div>
                     </div>
                     <div className="col-lg">

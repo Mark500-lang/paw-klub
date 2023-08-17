@@ -47,7 +47,7 @@ function Ourteam(){
                     </div>
                     <div className="team-name">
                         <h3>Henry Fisher</h3>
-                        <p className="text-muted">assistant</p>
+                        <p className="text-muted">assistant handler</p>
                     </div>
                 </div>
                 <div className="team-box">
