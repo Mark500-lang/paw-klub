@@ -34,7 +34,7 @@ npm install
 4. **Run the Development Server:**
 npm start
 
-The website will be accessible at `https://paw-klub.vercel.app/`.
+The website will be accessible at <https://paw-klub.vercel.app>.
 
 ## External API Integration:
 
