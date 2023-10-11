@@ -48,3 +48,18 @@
     background-color: #8400ff;
     border-radius: 64% 36% 31% 69% / 59% 56% 0% 41%;
 }
+@media screen and (max-width: 580px){
+    .daycare-dogwball img{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 450px){
+    .daycare-dogwball img{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 315px){
+    .daycare-dogwball img{
+        max-width: 250px;
+    }
+}
