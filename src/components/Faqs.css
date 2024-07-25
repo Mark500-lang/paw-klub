@@ -64,7 +64,7 @@
     &.open {
         background-color: #ff4d30;
         color: white;
-        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.253);
+        /* box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.253); */
         border: 0;
     &::after {
         content: "";
